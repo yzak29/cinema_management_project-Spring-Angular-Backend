@@ -8,13 +8,10 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 @Entity
-@Data @AllArgsConstructor @NoArgsConstructor @ToString
+@Data @AllArgsConstructor @NoArgsConstructor @ToString @Getter @Setter
 public class Ticket {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
